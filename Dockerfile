@@ -1,4 +1,4 @@
-bashCopy code
+
 # Use the official Node.js image as the base image
 FROM node:18
 
@@ -9,7 +9,9 @@ WORKDIR /project_2_v2
 COPY . /project_2_v2
 
 # Install the application dependencies
-RUN npm install
+# Changed from 'npm' to 'yarn' because yarn is more efficient and
+# compatible with Node.js images
+RUN yarn install
 
 # Define the entry point for the container
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
