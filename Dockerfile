@@ -1,4 +1,3 @@
-
 # Use the official Node.js image as the base image
 FROM node:18
 
@@ -12,6 +11,10 @@ COPY . /project_2_v2
 # Changed from 'npm' to 'yarn' because yarn is more efficient and
 # compatible with Node.js images
 RUN yarn install
+
+# Expose the port for the application
+# Added the EXPOSE command to specify the port that the application listens on
+EXPOSE 3000
 
 # Define the entry point for the container
 CMD ["yarn", "start"]
