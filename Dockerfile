@@ -18,5 +18,5 @@ EXPOSE 3000
 
 # Define the entry point for the container
 # Changed from CMD to ENTRYPOINT because the container was before exiting becoming healthy
-# Using ENTRYPOINT allows the container to run in the the foreground command and keeps the container up a
+# Using ENTRYPOINT allows the container to run in the the foreground command and keeps the container up 
 ENTRYPOINT ["yarn", "start"]
