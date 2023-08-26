@@ -6,5 +6,5 @@ COPY ${JAR_FILE} /project_2_v2.jar
 # Expose the port for the container
 EXPOSE 8080
 # Set the entrypoint command to run the JAR fileу
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+ENTRYPOINT ["java", "-jar", "/project_2_v2.jar"]
 
