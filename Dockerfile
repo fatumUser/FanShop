@@ -1,4 +1,6 @@
-FROM openjdk:17-jdk mysql: date_baze_2
+FROM openjdk:17-jdk 
+FROM mysql: date_baze_2
+FROM openjdk: 17-jdk
 EXPOSE 9091
 ADD TestJarFileC-0.0.1-SNAPSHOT.jar TestJarFileC-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java", "-Dspring.profiles.active=dev", "-jar", "/TestJarFileC-0.0.1-SNAPSHOT.jar"]
