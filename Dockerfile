@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk mysql:datebaze2 a:a
+FROM openjdk:17-jdk mysql:datebaze2 hello-world:nanoserver-1809
 EXPOSE 9091
 ADD TestJarFileC-0.0.1-SNAPSHOT.jar TestJarFileC-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java", "-Dspring.profiles.active=dev", "-jar", "/TestJarFileC-0.0.1-SNAPSHOT.jar"]
