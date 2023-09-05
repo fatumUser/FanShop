@@ -1,11 +1,9 @@
-CREATE DATABASE dog;
-use student;
+CREATE DATABASE doc;
+use doc;
 
-CREATE TABLE dogs(
-   Id int not null AUTO_INCREMENT,
-   Name varchar(100) NOT NULL,
-   Age varchar(100) NOT NULL,
-   PRIMARY KEY (Id)
+CREATE TABLE doc(
+id INT,
+name VARCHAR(255) NOT NULL,
+age VARCHAR(255) NOT NULL,
+birthday Date
 );
-
-INSERT INTO dogs(Name, Age)
